@@ -6,7 +6,6 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // реализуйте алгоритм здесь
 
         UserService userService = new UserServiceImpl();
 
