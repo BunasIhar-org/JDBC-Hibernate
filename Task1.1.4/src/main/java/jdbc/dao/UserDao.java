@@ -4,6 +4,7 @@ import jdbc.model.*;
 import java.util.*;
 
 public interface UserDao {
+    
     void createUsersTable();
 
     void dropUsersTable();
