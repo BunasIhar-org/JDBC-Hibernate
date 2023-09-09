@@ -25,7 +25,7 @@ public class UserDaoJDBCImpl implements UserDao {
         try (Connection connection = Util.getConnection(); Statement statement = connection.createStatement()) {
             statement.executeUpdate(sql);
         } catch (SQLException e) {
-            System.out.println("Ошибка при удалении таблицы.");
+            System.out.println("Ошибка при удалении таблицы");
         }
     }
 
@@ -49,7 +49,7 @@ public class UserDaoJDBCImpl implements UserDao {
             System.out.println("User с именем – " + name + " добавлен в базу данных с ID: " + id);
 
         } catch (SQLException e) {
-            System.out.println("Ошибка при сохранении пользователя в таблицу.");
+            System.out.println("Ошибка при сохранении пользователя в таблицу");
         }
     }
 
@@ -62,7 +62,7 @@ public class UserDaoJDBCImpl implements UserDao {
             preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
-            System.out.println("Ошибка при удалении пользователя из таблицы.");
+            System.out.println("Ошибка при удалении пользователя из таблицы");
         }
     }
 
@@ -87,7 +87,7 @@ public class UserDaoJDBCImpl implements UserDao {
                 result.add(user);
             }
         } catch (SQLException e) {
-            System.out.println("Ошибка при получении всех пользователей из таблицы.");
+            System.out.println("Ошибка при получении всех пользователей из таблицы");
         }
         return result;
     }
@@ -98,7 +98,7 @@ public class UserDaoJDBCImpl implements UserDao {
              Statement statement = connection.createStatement()) {
             statement.executeUpdate(sql);
         } catch (SQLException e) {
-            System.out.println("Ошибка при удалении всех записей таблицы.");
+            System.out.println("Ошибка при удалении всех записей таблицы");
         }
     }
 }
