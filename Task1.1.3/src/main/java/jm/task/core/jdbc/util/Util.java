@@ -16,7 +16,7 @@ public class Util {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
 
         } catch (SQLException e) {
-            System.out.println("Не удалось установить соединение.");
+            System.out.println("Не удалось установить соединение");
         }
         return conn;
     }
