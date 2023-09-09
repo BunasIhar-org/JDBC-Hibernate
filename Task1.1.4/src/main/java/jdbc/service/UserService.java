@@ -4,6 +4,7 @@ import jdbc.model.*;
 import java.util.*;
 
 public interface UserService {
+    
     void createUsersTable();
 
     void dropUsersTable();
